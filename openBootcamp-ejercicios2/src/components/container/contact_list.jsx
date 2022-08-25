@@ -55,7 +55,7 @@ import ContactForm from '../pure/forms/contactForm';
        
       
     }
-    console.log(ContactForm)
+    
     return (
       <div className="col-12">
        

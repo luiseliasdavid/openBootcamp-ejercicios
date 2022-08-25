@@ -20,10 +20,12 @@ export default function ContactForm({addContact}) {
       CONECTADO.FALSE
     )
     addContact(newContact)
+
   }
 
+
   return (
-    <div>hola
+    
     <form
       onSubmit={addNewContact}
       className="d-flex justifi-content-center  aligin-center mb-4"
@@ -37,6 +39,8 @@ export default function ContactForm({addContact}) {
           required
           autoFocus
           placeholder='Nombre'
+          
+          
         />
         <input
           ref={lastNameRef}
@@ -46,21 +50,23 @@ export default function ContactForm({addContact}) {
           required
           autoFocus
           placeholder='Apellido'
+          
         />
         <input
           ref={emailRef}
           id="inputEmail"
-          type="text"
+          type="email"
           className="form-control form-control-lg"
           required
           autoFocus
           placeholder='Email'
+          
         />
       </div>
      
-      <button type='submmit' className='btn btn-success btn-lg ms-2' >add</button>
+      <button  type='submmit' className='btn btn-success btn-lg ms-2' >add</button>
     </form>
-  </div>);
+  );
 }
 
 ContactForm.propTypes={  
