@@ -4,13 +4,15 @@ import Ejemplos4 from "./hooks/ejemplos4";
 
 import './App.css'
 import Clock from "./components/container/clock";
+import Cuadrado from "./components/container/cuadrado";
 
 function App() {
   return (
     <div >
+       <Cuadrado></Cuadrado>
      {/*  <Clock></Clock> */}
     {/* <h1>*****ejemplo de props.children********</h1> */}
-     <ContactListComponent></ContactListComponent>
+    {/*  <ContactListComponent></ContactListComponent> */}
    {/*  <MiComponenteConContexto></MiComponenteConContexto> */}
   {/*   <Ejemplos4 nombre="Luis" >
        <h3>
