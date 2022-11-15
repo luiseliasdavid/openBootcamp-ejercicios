@@ -1,14 +1,14 @@
 import React from 'react'
 
-function useCounter(initialValue) {
+function useCounter(initialValue=50) {
 
     const [contador, setContador]= React.useState(initialValue)
 
-    const aumentar = () => setContador (contador +1)
+    const aumentar = () => {if (contador<80)setContador (contador +10)}
         
         
     
-    const restar = ()=> setContador(contador-1)
+    const restar = ()=> {if (contador>0)setContador(contador-10)}
 
 
   return [contador,aumentar,restar]

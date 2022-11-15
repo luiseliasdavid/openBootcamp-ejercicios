@@ -4,7 +4,7 @@ import useCounter from '../../hooks/useCounter'
 function Contador() {
  
 
-    const [num,aumentar,restar ] = useCounter(0)
+    const [num,aumentar,restar ] = useCounter()
 
 
 
